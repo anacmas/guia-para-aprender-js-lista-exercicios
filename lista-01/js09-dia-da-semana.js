@@ -12,9 +12,13 @@
  */
 
 // Entrada
-var entrada = 1
+var entrada = -1
+var listaDias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'Domingo'
 
-console.log(resultado)
+if(typeof(entrada) != "number" || entrada <= 0 || entrada > 7) {
+    console.log('Entrada inválida.')
+} else {
+    console.log(listaDias[entrada-1])
+}
