@@ -14,9 +14,12 @@
  */
 
 // Entrada
-var entrada = "J";
+var entrada = ("s").toUpperCase().toString()
 
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = false;
+var lista = ["YES", "Y", "SIM", "S", "1", "👍"]
 
-console.log(resultado);
+if(lista.includes(entrada)){
+    console.log("true")
+} else {
+    console.log("false")
+}
