@@ -16,10 +16,26 @@
  */
 
 // Entrada
-var n1 = 'A'
+var n1 = 1.5
 var n2 = 40
-
+let numerosSomados;
 // Saída
-var resultado = '?'
 
-console.log(resultado)
+
+if(typeof(n1) == "number"){
+
+    if(typeof(n2) == "number") {
+
+        let soma = function(n1, n2){
+            return numerosSomados = n1 + n2
+        }
+
+        console.log(soma(n1, n2))
+        
+    } else {
+        console.log(`'${n2}' não é um Número`)
+    }
+
+} else {
+    console.log(`'${n1}' não é um Número`)
+}
