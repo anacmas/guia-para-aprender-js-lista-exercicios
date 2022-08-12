@@ -10,9 +10,14 @@
 */
 
 // Entrada
-var entrada = 'a'
+var entrada = ('J').toUpperCase()
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'vogal'
 
-console.log(resultado)
+var vogais = ['A', 'E', 'I', 'O', 'U']
+
+if(vogais.includes(entrada)) {
+    console.log('vogal')
+} else {
+    console.log('consoante')
+}
