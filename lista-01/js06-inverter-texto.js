@@ -8,9 +8,13 @@
  */
 
 // Entrada
-var entrada = 'abacate'
+var entrada = "abacate"
+var entradaStr = entrada.toString()
+// gere a variável invertido corretamente
 
-// gere a variável invertido de forma a transforma a entrada na saída esperada
-var invertido = '?'
+
+
+var invertido = entradaStr.split("").reverse().join("")
+
 
 console.log(invertido)
