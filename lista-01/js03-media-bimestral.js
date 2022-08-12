@@ -26,18 +26,39 @@
  */
 
 // Entrada
-var notas = [10, 8, 9.5, 7, 10]
+var notas = [7, 5, 5.5, 6, 5]
+let somaDasNotas = 0;
+let aprovacao;
 
-// Altere a expressão abaixo para calcular a média a partir do total de notas
-var media, quantidadeDeNotas
-var total = 0
+notas.forEach( nota => {
+    somaDasNotas += nota
+})
+
+
+// Altere a expressão abaixo para calcular cm com base na var metros
+var media;
+let quantidadeDeNotas = 0;
 
 // Faça um loop para achar o total de notas
 
+while (quantidadeDeNotas < notas.length) {
+    quantidadeDeNotas++
+}
+
+
 // Veja como pegar este valor com base na entrada
-quantidadeDeNotas = 5
-media = 0    // ?
+
+media = somaDasNotas/quantidadeDeNotas
 
 var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
 
+
 console.log(resultado)
+
+if(media < 7) {
+    aprovacao = "aprovado";
+} else {
+    aprovacao = "reprovado";
+}
+
+console.log(`Você foi ${aprovacao}!`)
