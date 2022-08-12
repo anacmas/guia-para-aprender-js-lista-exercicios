@@ -30,10 +30,33 @@
  */
 
 // Entrada
-var texto = 'abacate'
+var texto = 'Zebra'
 
 // implemente aqui uma lógica para criptografar o texto
 
-var textoCripto = 'bcbdbuf'
+let textoEmArray = texto.split("")
+let listaDeNumeros = []
+let letraCripto;
+let numeroCripto;
+let listaDeLetrasCripto = []
+
+
+textoEmArray.forEach( letra => {
+    if(letra == "z"){
+        letraCripto = 64 - 1
+    } else if(letra == "Z") {
+        letraCripto = 36 - 1
+    } else{
+        letraCripto = letra.charCodeAt(0);
+    }
+    listaDeNumeros.push(letraCripto + 1);
+})
+
+listaDeNumeros.forEach( numero => {
+    numeroCripto = String.fromCharCode(numero)
+    listaDeLetrasCripto.push(numeroCripto)
+})
+
+var textoCripto = listaDeLetrasCripto.join("")
 
 console.log(textoCripto)
