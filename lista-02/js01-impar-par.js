@@ -10,8 +10,18 @@
 var entrada = [1,3,5,7,8]
 
 var saida = []
+let imparPar;
+
 
 // gerar a lista de saida
-saida = ['impar', 'impar', 'impar', 'impar', 'par']
+
+for(let i = 0; i < entrada.length; i++){
+    if(entrada[i] % 2 == 0){
+        imparPar = "par"
+    } else{
+        imparPar = "ímpar"
+    }
+    saida.push(imparPar)
+}
 
 console.log(saida)
